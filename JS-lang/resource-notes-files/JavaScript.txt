@@ -1,0 +1,494 @@
+	JavaScript
+=It's a programming and scripting language
+JavaScript is a programming language that is commonly used for creating interactive and dynamic content on websites. It is a versatile language that runs on the client side, meaning it is executed by the user's web browser rather than on the server. JavaScript is an essential component of web development and is often used to enhance the user experience by enabling features such as form validation, animations, and real-time updates without the need to reload the entire page.
+
+ JavaScript has become a crucial part of full-stack development, as it can be used on both the client and server sides. On the server side, JavaScript is commonly implemented through platforms like Node.js. It supports object-oriented, imperative, and functional programming paradigms, making it a versatile language for a wide range of applications.
+
+after js : ReactJS , AngularJS, VueJS, nodeJS
+
+JS ENGINE
+js standards are based on ES(ecma script)
+Js Engine
+hello.js -> (JS Engine:
+javascript high level code is converted to machine executable using v8 engine,spider monkey, nodeJS used for standalone application of js.)
+
+To run 
+node index.js
+
+dir:JSTube
+01Hello dir
+index.html
+emmet is directly supported by vs code which gives basic template
+
+at the end of body tag above <script src="./script.js></script>
+dev tools -> console
+console.log("Hello Sid");
+
+WHICH VERSION OF JS IS USED ?
+HTML = content
+CSS = styling
+JS = dynamic and functionality
+JavaScript can do DOM manipulations
+
+ECMAscript
+JS follows ECMA script standards.
+https://webreference.com/javascript/basics/versions/
+2023-ES14
+
+VARIABLES AND DataTypes
+reserving the some space in memory is done using the variables
+var let and const
+
+INTERPOLATION : ${uid}
+const means can't vary next time
+
+PRO : SignUp form validation
+
+OPERATORS
++ - * / %
+
+PRO : discount
+discount = (Lp - Sp/Lp)*100
+
+TYPE and OPERATOR PRECEDENCE
+console.log(typeof result);
+give the data type of it
+
+"typeof" keyword
+operator precedence of () is 21
+mdn documentation of operator precedence
+
+functional calls and optional chaining are used for handling the api's
+
+function parts
+
+CONDITIONAL LOGIN
+
+
+TERINARY OPERATOR
+ ? :
+
+
+SWITCH FOR ROLE-BASED ACCESS in JS
+
+website
+accesser has different level of accesses
+and prevalages;
+
+fall through
+
+COERCION AND FALSY VALUES in JS
+falsy values are
+undefined
+null
+0
+''
+"" empty string
+NaN
+
+var user;//not init
+
+BASICS OF FUNCTIONS in JS
+JS supports a lot of functional programming.
+=functions is a block of code written as separate.so, that it can be used as reusability of it.
+
+FUNCTIONS IN VARIABLE USER ROLE in JS
+function and arrow functions
+
+CONTEXT
+
+CODE HOISTING
+context helps us to understand the js well.
+global context and execution context
+
+execution context
+execution context
+global context
+
+inside execution context (below things are present)
+variable object
+scope chain
+this keyword
+
+function is called global context
+function calling is called execution context
+
+=function declarations are scanned and made available for entire
+=variable declarations are scanned and made undefined
+
+SCOPE CHAINING 
+scope chain in context
+
+{
+scope
+}
+
+function scope()
+{}
+
+for if and other it is not scope
+
+scope explaination
+global var
+function var and another func inside the fuction.
+
+LIGHT INTRO TO THIS in JS
+console.log(this);
+
+ARRAYS OBJ'S AND LOOPS + DB are most important
+
+CALL BAK AND ARRROW FUNCTION intro in array's
+
+
+FILL AND FILTERS methods in array
+var a = [2,34,4]
+a.fill("h",2);
+
+a.filter((num)=>(num!=34));
+
+SLICE AND SPLICE
+
+
+OBJECTS IN js
+
+var users = 10;
+var Users = "sid";
+var USER = ["Ted","Tim","Sid","Tom"]
+console.log(USER.slice(1,3));
+
+            //start and count till remove and add
+USER.splice(1,0,"Hai","BYE","JAI");
+console.log(USER);
+
+API's looks like the obj's
+
+var user = {
+    firstName : "SidduGanesh",
+    lastName : "Musa",
+    role : "Admin",
+    loginCount : 32,
+    GoogleSignedIn : true
+}
+
+// . features is just like the access the object
+console.log(user.firstName)
+console.log(user["lastName"]);
+
+user.loginCount = 44;
+
+console.log(user.loginCount);
+
+console.table(user)
+
+//7 obj is recommended
+
+METHODS & OBJECTS in JS
+
+
+FOR LOOP BASICS in JS
+const states = [
+    "Telanagana",
+    "Andhra Pradesh",
+    1947,
+    "Madya pradesh"
+]
+
+for (let index = 0; index < states.length; index++) {
+    // const element = states[index];
+    // console.log(states[index]);
+    if(typeof states[index]!=="string") continue;
+    console.log(states[index]);
+}
+
+WHILE AND DO WHILE LOOPS in JS
+
+do-while generally not much used inside web development
+
+FOR EACH
+lot of other loops
+for in and for of
+
+FOR IN and FOR OF
+
+CONFUSING PART OF THIS in JS
+//this
+//= for all regular function calls, this points to window object
+//study about __proto__
+
+console.log(this);
+
+var user = {
+    name : "sidduganesh",
+    courseCount : 0,
+
+    getCourseCount: function(){
+        console.log("Line 7",this);
+        //below code is called regular function call
+function sayHello()
+{
+    console.log("hello");
+    console.log("LINE 17",this);
+}
+sayHello();
+    }
+    
+}
+//object function calls
+user.getCourseCount();
+
+
+//below code is called regular function call
+function sayHello()
+{
+    console.log("hello");
+}
+sayHello();
+
+WHAT IS DOM
+Document object model
+ var_name = document.getElementByTagName("h1")[0].innerHTML
+
+var techy = document.getElementsByClassName("title")[0].innerText
+dom images
+
+HOW TO GRAB WEB ELEMENTS in JS
+=selecting elements on web page
+=======================================
+COUNTER PROJECT in JS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img 
+        height="100px"
+        src="" 
+        alt="counterPic"
+        >
+        <h1 class="counter">1000</h1>
+        <p class="followers">Followers</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+var counter = document.querySelector(".counter");
+var followers = document.querySelector(".followers");
+
+// counter.innerHTML = 1002;
+
+let count = 1;
+
+setInterval( //conditional you can use
+    () => {
+        count++
+        counter.innerText = count;
+    },1
+)
+//vanilla js is good for like this..
+setTimeout(()=>{
+    followers.innerHTML = "Followers on Instagram";
+},5000)
+GET COMPUTED PROPERTIES in JS
+
+
+EVENT LISTENER in JS
+=clicking on subscribe button is called as an Event
+FW : React, Angular, Vue 
+contains the events listeners
+//proto types first letter is declared as capital
+
+
+
+NEW KEYWORD in JS
+//below is correct proto type
+var User = function(firstName,lastName,email,courseCount){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.email = email;
+    this.courseCount = courseCount;
+
+    this.getCourseCount = function(){
+        console.log(`course count is: ${this.courseCount}`)
+    }
+
+}
+
+                //below functional approach is not working. so to create obj use new keyword
+var sidduganesh = new User("sidduganesh","musa","sidduganeshengineer@gmail.com",3);
+
+console.log(sidduganesh);
+
+var aakashganesh = new User("aakashganesh","musa","aakashganesh14@gmail.com",1);
+
+console.log(aakashganesh);
+
+---
+
+WHAT IS PROTO in JS
+//below is correct proto type
+var User = function(firstName,lastName,email,courseCount){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.email = email;
+    this.courseCount = courseCount;
+
+    this.getCourseCount = function(){
+        console.log(`course count is: ${this.courseCount}`)
+    }
+
+}
+//without touching the actual function. Injecting the properties
+User.prototype.getFirstname = function(){
+    console.log(`you firstname is : ${this.firstName}`);
+}// above prototype like that code is used in the TypeScript
+//every thing that is available in the prototype you can actually overriden it.
+
+BETTER CODE WITH OBJECT CHAIN in JS
+
+
+OBJECTS from mdn
+
+SELF - EXECUTING ANONYMOUS FUNCTION(also called as IIFE)
+//self executing anonymous function
+(function ()
+{
+    console.log("Hey, How do you do?");
+})();
+//very rarely used
+use cases : testing , web scriping
+
+ and FUNCTIONAL PROGRAMMING
+funtion that calls itself after declaring it
+that is
+()=>{} or ()=>{}
+
+LEXICAL SCOPING
+redux seems tough bcz it uses the closures in it
+=lexical scoping is the classical way of writing the javascript
+
+BORROW A METHOD USING BIND
+bind is a method inside the getinfo 
+it is present and imp in js
+bind actually gives reference
+bind() always gives you reference back
+call() directly calls the method/function
+
+const hitesh = {
+  firstName: "Hitesh",
+  lastName: "Choudhary",
+  role: "Admin",
+  courseCount: 3,
+  getInfo: function () {
+    console.log(`
+        First name is ${this.firstName}
+        Last name is ${this.lastName}
+        His role is ${this.role}
+        and he is studying ${this.courseCount} courses
+        `);
+  },
+};
+
+const dj = {
+  firstName: "Rock",
+  lastName: "DJ",
+  role: "Sub-Admin",
+  courseCount: 4,
+};
+
+// hitesh.getInfo();
+// dj.getInfo();
+
+// var djInfo = hitesh.getInfo.bind(dj);
+// djInfo();
+
+hitesh.getInfo.call(dj);
+
+GET TO KNOW NODE ELEMENTS in JS
+elements and Text nodes
+list of classes
+
+GENERATING ELEMENTS AND TEXT NODE IN DOM
+
+
+SOLUTION OF SCOPE PROBLEM
+olden data JS is used only for fend.
+after years it is used for mobile and routing
+and a lot more.
+so they introducted let keyword
+let is used for error and backend
+
+js considers the functions only as scope 
+not the blocks for if,for and other 
+
+TEMPLATE LITERALS IN JS
+
+
+MAPS in JS
+//another thing in JS modern edition is MAPS
+
+
+DESTRUCTUREIN THE DATA in jS
+depicking the data
+only thinks as happens in objects
+but not happens in  other places
+
+rhs datatype to lhs datatype
+
+
+SPREAD AND REST operators
+
+CLASSES AND MODULE EXPORT in JS
+
+
+PRIVATE PROPS GETTERS AND SETTERS in JS
+# to properties
+
+INHERITANCE in JS
+extends keyword
+super() function inside constructer
+static keyword to make few functions private or personal can't be extended
+
+
+EVENT LOOP will JS wait
+
+
+PROMISE Async and Await in JS
+promises, resolve ,reject ,Async and Await
+
+
+HOW TO HANDLE API in JS
+we can call API using core JS
+but we can't call it using node js
+API
+https://api.chucknorris.io/
+
+now we can handle api's
+bcz we know ajax and async
+
+api
+weather
+google maps
+firebase api's
+facebook
+chucknorris
+
+JSON format
+XML format is old (not used currently)
+
+JSON chrome add-on's createds some problem
+disable them the create problem in web
+
+
+what is type:cors ?
+
+core essential thing
+Django, nodebase,cors you should know
+

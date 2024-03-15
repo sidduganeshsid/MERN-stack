@@ -1,0 +1,129 @@
+<!-- HTML page consists of lots of data, who made it(author), why , when , zoom in  and zoom out details is know as meta data  -->
+<!--  head section : meta section = it is data about data (size of data, when created and when modified.)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title of the Page</title>
+    <!-- Internal CSS
+        <style> 
+        body{
+            background-color: #414141;
+            color: #fff;
+        }
+    </style> -->
+    <link rel="stylesheet" href="./head.css">
+    <!-- UTF-16 is the good practice -->
+    <meta charset="UTF-16" />
+
+    <meta name="keywords" content="HTML, web"/>
+    <meta name="description" content="this is a web page tutorial"/> 
+
+    <!-- FOR FAST RENDER OR REFRESH -->
+    <meta http-equiv="REFRESH" content="30">
+
+    <!-- IMP for mobile view (to understand try changing the initial-scale=0.1 to 0.9 to see difference of mobile view, TRY : user-scale, interactive-scale) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <script> some script what you want to load before the website loads-->
+    <script>
+
+    </script>
+
+</head>
+<body>
+   <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo laboriosam praesentium quaerat provident sunt unde optio illo nulla dignissimos voluptatum.</h1>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus commodi maiores eius pariatur ipsa enim eos aliquam, illum doloremque expedita reprehenderit porro obcaecati harum, hic debitis aperiam. Corrupti aut ut ex unde, recusandae harum ullam ipsa animi voluptates tenetur tempora libero atque quas vitae porro. Earum numquam dicta voluptatibus dolore ea id blanditiis eos animi? Possimus tempore quod nisi quo ipsam in praesentium, deleniti reprehenderit? Dolor ullam voluptatibus rem omnis eveniet nihil ex provident incidunt aut, fugiat, sint iste dicta. Magni fugiat nisi porro dolores aliquam, veniam quo nesciunt accusamus necessitatibus quas quam, labore voluptatum earum? Esse quo minus nihil quaerat consequatur velit mollitia rerum, et accusantium, animi repellat iste aspernatur tenetur recusandae officia optio sequi deserunt nobis hic sapiente at blanditiis debitis? Beatae dicta dolorem corporis, magni magnam ipsam, asperiores odio perferendis, expedita assumenda impedit facilis numquam adipisci id possimus enim officia! Ab facilis nisi inventore voluptatibus doloremque rem ullam facere tempore, laudantium explicabo iure corporis nihil neque obcaecati. Blanditiis sunt architecto placeat alias explicabo ipsa hic id, beatae, non unde quibusdam atque cum expedita nisi quaerat dolore corrupti vitae! Error animi reiciendis placeat molestiae deserunt quibusdam sapiente molestias vero ad! Maxime error sunt a ipsam velit reiciendis excepturi!</p>
+
+   <!-- Article and blogging  -->
+    <code>console.log("Hello");</code>
+   <kbd></kbd>
+   <samp></samp>
+   <var></var>
+   <pre></pre>
+
+    <!-- //old way of declaring -->
+   <div class="header"></div>
+   <div class="navbar"></div>
+   <div class="content"></div>
+   <div class="footer"></div>
+
+   <!-- new way of declaring -->
+   <!-- semantics  -->
+   <header></header>
+   <nav></nav>
+   <section></section>
+   <article></article>
+   <aside></aside>
+   <footer></footer>
+   <summary></summary>
+   <details></details>
+
+    <!-- W3 consortium maintains the html -->
+
+   <!-- search : html modern semantics mdn-->
+
+   <!-- forms in HTML are IMP -->
+   <!-- majority of things happens in forms -->
+    <h1>Forms in HTML</h1>
+    <!-- <form action="url"></form> for backend -->
+    <!-- action is used for the backend -->
+    <!-- enctype= (multiple type of data like files,....browse button) -->
+    <form action="url" method="get" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" novalidate target="_blank">
+        
+        <!-- label is necessary for the screen readers -->
+        <!-- for attribute in the label denotes the label for which input it is meant for. -->
+        <label for="fname">First Name</label><br />
+        <input type="text" placeholder="first name" name="" id="fname" ><br />
+
+        <!-- screen readers won't reads the placeholders data -->
+        <label for="lname">Last Name</label><br />
+        <input type="text" placeholder="first name" name="" id="lname" > <br/>
+
+        <select name="IDE's" id="" multiple>
+            <option value="vscode">VS Code</option>
+            <option value="eclipse">Eclipse</option>
+            <option value="intellij">IntelliJ</option>
+            <option value="pycharm">PyCharm</option>
+        </select>
+
+        <input list="editors" name="Editors">
+        <datalist id="editors">
+            <select name="IDE's" id="" >
+                <option value="vscode">VS Code</option>
+                <option value="eclipse">Eclipse</option>
+                <option value="intellij">IntelliJ</option>
+                <option value="pycharm">PyCharm</option>
+            </select>
+        </datalist>
+
+        <label for="msg">Message</label><br>
+        <input type="text" name="" value="hai" id="msg">
+        <input type="reset" value="reset"><br>
+
+        <button type="submit">Submit</button>
+
+        <!-- it is most widely used to send the tokens ( used in Django) -->
+        <input type="hidden" name="">
+        
+    </form>
+
+    <!-- Advanced HTML -->
+    <!-- window of the 3rd party -->
+    <iframe src="" frameborder="0"></iframe>
+
+    <video width="320" height="240" controls muted autoplay>
+        <source src="./sss.mp4">
+    </video>
+
+    <audio src="" controls muted autoplay></audio>
+
+    <!-- media including the HTML -->
+
+    <!-- HTML API's LIKE drag and drop , canvas , geo location -->
+    <canvas></canvas>
+    <!-- geo location -->
+    <!-- location map -->
+    <!-- to access broswers properties(like : file management system, geo location) then u need to learn the javascript, -->
+
+</body>
+</html>
